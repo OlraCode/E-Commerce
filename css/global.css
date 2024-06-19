@@ -23,6 +23,7 @@ nav{
 nav h1{
     font-size: 28px;
     width: 156px;
+    cursor: default;
 }
 nav h1 span{
     color: var(--primary)
@@ -36,12 +37,23 @@ nav ul li{
     margin: 1rem;
     text-align: center;
 }
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    font-weight: bold;
+}
 nav .icons{
     width: 156px;
     text-align: right;
 }
 nav .icons span{
     font-size: 35px;
+    cursor: pointer;
+}
+nav .icons span:hover{
+    font-weight: bold;
 }
 nav .icons span:last-child{
     display: none;
