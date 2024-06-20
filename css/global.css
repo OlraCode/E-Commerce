@@ -12,6 +12,9 @@
     --primary: #0077ff;
     --secondary: #242424;
 }
+
+/* Navbar */
+
 nav{
     background-color: var(--secondary);
     color: #fff;
@@ -58,3 +61,25 @@ nav .icons span:hover{
 nav .icons span:last-child{
     display: none;
 }
+
+/* /Navbar */
+
+header{
+    display: flex;
+    background-image: radial-gradient(circle, #fff, #cfcfcf);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+header .left-content p{
+    font-size: 1.3rem;
+}
+header .right-content{
+    flex-basis: 50%;
+}
+header .right-content img{
+    width: 400px;
+    text-align: center;
+}
+
+/* Header */
