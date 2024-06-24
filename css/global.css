@@ -8,6 +8,9 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    height: 300vh;
+}
 :root{
     --primary: #0077ff;
     --secondary: #242424;
@@ -95,31 +98,54 @@ nav .hamburguer ul li:hover{
     background-color: #646464;
     font-weight: bold;
 }
-/* /Navbar */
 
-header{
+/* Banner */
+header .banner{
     display: flex;
     background-image: radial-gradient(circle, #fff, #cfcfcf);
     align-items: center;
     justify-content: space-between;
-    padding: 0 2rem;
+    padding: 2rem 2rem;
 }
-header .left-content p{
+header .banner .left-content p{
     font-size: 1.3rem;
 }
-header .right-content{
+header .banner .right-content{
     flex-basis: 50%;
 }
-header .right-content img{
+header .banner .right-content img{
     max-width: 400px;
     text-align: center;
 }
+
+/* Carrousel */
+
+.carrousel-container{
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    height: 375px;
+}
+.carrousel{
+    display: none;
+    align-items: center;
+    width: 350px;
+    overflow: hidden;
+}
+.carrousel .images{
+    display: flex;
+    transform: translateX(-350px);
+}
+.carrousel .images img{
+    width: 350px;
+}
+
 @media screen and (max-width: 600px){
     nav > ul{display: none;}
     nav .icons span:last-child{display: block;}
-     header{
+    header .banner{
         flex-direction: column;
         padding-top: 3rem;
-     }
+    }
+    .carrousel{display: flex;}
 }
-/* Header */
