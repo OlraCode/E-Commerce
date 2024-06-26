@@ -124,7 +124,8 @@ header .banner .right-content img{
     background-color: var(--secondary);
     display: flex;
     justify-content: center;
-    height: 375px;
+    height: 300px;
+    padding: .5rem;
 }
 .carrousel{
     display: none;
@@ -139,6 +140,21 @@ header .banner .right-content img{
 .carrousel .images img{
     width: 350px;
 }
+.static{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.static .item{
+    max-width: 250px;
+}
+.static img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
 @media screen and (max-width: 600px){
     nav > ul{display: none;}
@@ -147,5 +163,6 @@ header .banner .right-content img{
         flex-direction: column;
         padding-top: 3rem;
     }
+    .static{display:none;}
     .carrousel{display: flex;}
 }
