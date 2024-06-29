@@ -199,6 +199,12 @@ main h2{
 
 .product{
     max-width: 300px;
+    cursor: pointer;
+}
+.product:hover{
+    transform: translateY(-3px);
+    opacity: .8;
+    transition: all .3s;
 }
 .product img{
     max-width: 100%;
