@@ -104,21 +104,25 @@ header .banner{
     display: flex;
     background-image: radial-gradient(circle, #fff, #cfcfcf);
     align-items: center;
-    justify-content: space-between;
     padding: 2rem;
     height: 510px;
     overflow: hidden;
 }
-header .banner .left-content p{
-    font-size: 1.3rem;
+header .banner .left-content{
+    flex-basis: 50%;
+}
+header .banner .left-content h2{
+    font-size: 1.6rem;
+    text-align: center;
 }
 header .banner .right-content{
     flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 header .banner .right-content img{
-    max-width: 400px;
-    padding: 1rem;
-    text-align: center;
+    width: 100%;
 }
 
 /* Carrousel */
@@ -159,17 +163,7 @@ header .banner .right-content img{
     object-fit: cover;
 }
 
-@media screen and (max-width: 600px){
-    nav > ul{display: none;}
-    nav .icons span:last-child{display: block;}
-    header .banner{
-        flex-direction: column;
-        padding-top: 3rem;
-        justify-content: center;
-    }
-    .static{display:none;}
-    .carrousel{display: flex;}
-}
+
 
 /* Main */
 
@@ -187,7 +181,7 @@ main h2{
     background-color: var(--primary);
     margin: auto;
 }
-.on-offer{
+.on-offer, .main-products{
     display: grid;
     grid-template-columns: repeat(4, minmax(180px, 1fr));
     justify-content: center;
@@ -219,9 +213,75 @@ main h2{
     margin-right: 2px;
 }
 @media screen and (max-width: 800px) {
-    .on-offer{
+    .on-offer, .main-products{
         grid-template-columns: repeat(2, minmax(150px, 1fr));
         margin: 2rem 1rem;
         gap: .5rem;
+    }
+}
+
+/* Footer */
+
+footer{
+    background-color: var(--secondary);
+    color: #fff;
+    padding: 1.5rem 1rem;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.description{
+    text-align: center;
+}
+.description h3 span{
+    color: var(--primary);
+}
+.description p{
+    margin-top: .5rem;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.links ul{
+    list-style: none;
+}
+.links ul li{
+    margin-top: 3px;
+}
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+footer .underline{
+    background-color: #646464;
+    width: 90%;
+    margin: 1rem auto;
+}
+footer > p{
+    text-align: center;
+}
+
+@media screen and (max-width: 600px){
+    nav > ul{display: none;}
+    nav .icons span:last-child{display: block;}
+    .static{display:none;}
+    .carrousel{display: flex;}
+
+}
+@media screen and (max-width: 895px){
+    header .banner{
+        flex-direction: column;
+        padding-top: 3rem;
+        justify-content: center;
+    }
+    .right-content img{
+        max-width: 430px;
     }
 }
