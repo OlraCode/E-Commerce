@@ -26,12 +26,3 @@ Este projeto é uma **simulação de loja online** com interface interativa, pen
 - JavaScript (ES6+)  
 
 ---
-
-## 📌 Objetivo
-Mostrar habilidade em **desenvolver interfaces modernas**, organizar componentes e criar experiências de usuário funcionais no front-end.
-
----
-
-## ✉️ Contato
-Carlo Mathias — [cemcosta@gmail.com](mailto:cemcosta@gmail.com)  
-LinkedIn: https://www.linkedin.com/in/cemcosta
